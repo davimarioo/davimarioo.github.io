@@ -1,0 +1,154 @@
+:root {
+    --cor-clara: #fdf9ec;
+    --cor-media: #c89a78;
+    --cor-escura: #965835;    
+}
+body{
+    background-color: #fdf9ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #fdf9ec;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 50px;
+    color: #c89a78;
+    border: #965835;
+    font-family: 'Tapestry', cursive;
+    font-size: 26px;
+}
+
+.botoes {
+    margin-right: 10px;
+}
+
+#btn-login {
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: #fdf9ec;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+#btn-login:hover {
+    color: #c8997886;
+}
+
+#btn-signup {
+    height: 40px;
+    border-radius:  8px;
+    border-color: #965835;
+    padding: 10px;
+    background-color: #fdf9ec;
+    cursor: pointer;
+    outline-style: none;
+}
+
+#btn-signup:hover {
+    transition: .3s;
+    background-color: #c8997886;
+}
+
+.barra-pesquisa {
+    border: 1px solid #965835;
+    border-radius: 8px;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: #c89a78 0px 1px 2px 0px;
+    display: flex;
+    padding-left: 10px;
+    outline-style: none;
+}
+input[type=text]:focus {
+    border: 2px solid #c89a78;
+    margin: none;
+    padding: none;
+  }
+::-webkit-input-placeholder {
+    color: #c89a78;
+}
+
+.botaoPesquisa {
+    width: 70px;
+    height: 45px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #c89a78;
+    position: relative;
+    right: 145px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fa-solid .fa-magnifying-glass {
+    width: 50px;
+    height: 45px;
+}
+
+.poster {
+    height: 150px;
+    width: 300px;    
+}
+
+.muralEvento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    max-width: 1176px;
+    padding: 0px;
+    min-height: 210px;    
+}
+
+.cartaoEvento {
+    max-width: 262px;
+    border-radius: 8px;
+    padding: 0px 0px 24px;
+}
+a {
+    cursor: pointer;
+}
+
+.cartaoEvento:hover {
+    box-shadow: 3px 3px 15px #965835;
+    transition: .5s;
+}
+
+.areaInferiorCapaEvento {
+    margin-left: 4px;
+}
+
+.capaEvento {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.dataEvento {
+    color: #c89a78;
+    padding-left: 4px;
+}
+
+h3 {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#965835;
+    border-radius: 8px;
+    width: 272px;
+    padding-left: 4px;    
+}
+
+.localEvento {    
+    margin-top: 0px;
+    padding-left: 4px;
+}
