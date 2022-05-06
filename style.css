@@ -4,22 +4,23 @@
     --cor-escura: #965835;    
 }
 body{
-    background-color: #fdf9ec;
+    background-color: var(--cor-clara);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: #fdf9ec;
+    background-color: var(--cor-escura), 0.3;
     display: flex;
     flex-direction: row;
+    height: 100px;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
     margin-left: 50px;
-    color: #c89a78;
-    border: #965835;
+    color: var(--cor-escura);
+    border: var(--cor-escura);
     font-family: 'Tapestry', cursive;
     font-size: 26px;
 }
@@ -32,7 +33,7 @@ header {
     height: 40px;
     text-align: center;
     border: none;
-    background-color: #fdf9ec;
+    background-color: var(--cor-clara);
     cursor: pointer;
     padding-right: 10px;
 }
@@ -44,9 +45,9 @@ header {
 #btn-signup {
     height: 40px;
     border-radius:  8px;
-    border-color: #965835;
+    border-color: var(--cor-escura);
     padding: 10px;
-    background-color: #fdf9ec;
+    background-color: var(--cor-clara);
     cursor: pointer;
     outline-style: none;
 }
@@ -56,19 +57,19 @@ header {
     background-color: #c8997886;
 }
 
-.barra-pesquisa {
-    border: 1px solid #965835;
+.barraPesquisa {
+    border: 1px solid var(--cor-escura);
     border-radius: 8px;
     width: 500px;
     height: 40px;
     box-sizing: border-box;
-    box-shadow: #c89a78 0px 1px 2px 0px;
+    box-shadow: var(--cor-media) 0px 1px 2px 0px;
     display: flex;
     padding-left: 10px;
     outline-style: none;
 }
 input[type=text]:focus {
-    border: 2px solid #c89a78;
+    border: 2px solid var(--cor-media);
     margin: none;
     padding: none;
   }
@@ -76,27 +77,52 @@ input[type=text]:focus {
     color: #c89a78;
 }
 
+.areaBusca {
+    display: flex;
+}
+
 .botaoPesquisa {
-    width: 70px;
-    height: 45px;
+    width: 50px;
+    height: 44px;
+    font-size: 22px;
+    color: var(--cor-escura);
     background: none;
     border: none;
-    font-size: 1.5rem;
-    color: #c89a78;
-    position: relative;
-    right: 145px;
-    z-index: 1;
-    cursor: pointer;
+    align-items: center;
+    position: absolute;
+    right: 380px;
+    cursor: pointer; 
 }
 
-.fa-solid .fa-magnifying-glass {
-    width: 50px;
-    height: 45px;
+.bannerConteudo {
+    font-size: 28px;
+    color: var(--cor-escura);
+    width: 700px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-left: 45px;
+    margin-bottom: 8px;
+    text-align: inherit;
 }
 
-.poster {
-    height: 150px;
-    width: 300px;    
+.bannerConteudo h2 {
+    margin-bottom: 0;
+}
+
+.bannerLegenda {
+    font-size: 16px;
+    color: var(--cor-media);
+    font-weight: 100;
+    letter-spacing: -0.4px;
+    margin-bottom: 24px;
+    text-align: inherit;
+    max-height: 75px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.bannerImagens {
+    display: flex;    
 }
 
 .muralEvento {
@@ -112,8 +138,9 @@ input[type=text]:focus {
 .cartaoEvento {
     max-width: 262px;
     border-radius: 8px;
-    padding: 0px 0px 24px;
+    padding: 0px;
 }
+
 a {
     cursor: pointer;
 }
@@ -123,28 +150,24 @@ a {
     transition: .5s;
 }
 
-.areaInferiorCapaEvento {
-    margin-left: 4px;
-}
-
 .capaEvento {
-    margin-top: 0px;
-    padding-top: 0px;
+    margin: 0px;
+    padding: 0px;
     border-radius: 8px 8px 0px 0px;
 }
 
 .dataEvento {
+    font-weight: 500;
     color: #c89a78;
     padding-left: 4px;
 }
 
-h3 {
-    margin-top: 2px;
-    font-size: 16px;
-    font-weight: 600;
-    color:#965835;
-    border-radius: 8px;
-    width: 272px;
+.tituloEvento h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-escura);
+    width: 262px;
+    margin: 0;
     padding-left: 4px;    
 }
 
@@ -152,3 +175,5 @@ h3 {
     margin-top: 0px;
     padding-left: 4px;
 }
+
+
